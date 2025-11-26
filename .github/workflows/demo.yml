@@ -4,11 +4,10 @@ on:
   push:
     branches: [main]
 
-jobs:               # this must be at the top level
+jobs:
   demo:
-    runs-on: ubuntu-latest   # uses a hyphen, not a space
+    runs-on: ubuntu-latest
 
     steps:
       - name: Greetings
         run: echo "Hello, World!"
-
