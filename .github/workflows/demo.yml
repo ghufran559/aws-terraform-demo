@@ -1,14 +1,14 @@
-name: Hello World 
+name: Hello World
 
 on:
-   push:
-      branches: [main]
+  push:
+    branches: [main]
 
-   jobs:
-      demo:
-            runs on: ubuntu -latest
+jobs:               # this must be at the top level
+  demo:
+    runs-on: ubuntu-latest   # uses a hyphen, not a space
 
-            steps:
-            - name: Greetings
-              run: echo  "Hellow, World!"
-          
+    steps:
+      - name: Greetings
+        run: echo "Hello, World!"
+
